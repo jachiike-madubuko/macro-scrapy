@@ -27,6 +27,14 @@ def parse_location(text):
     return text[3:]
 
 
+class EventItem(Item):
+    date = Field()
+    data = Field()
+    day_n_time = Field()
+    title = Field()
+    location = Field()
+    price = Field()
+
 class QuoteItem(Item):
     quote_content = Field(
         input_processor=MapCompose(remove_quotes),

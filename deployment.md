@@ -9,21 +9,21 @@ Create an free account and create a project:
 We will use the `shub` command line to deploy. You can find your API key and deploy number once in your project Code & Deploys page:
 ![Screen Shot 2019-08-19 at 11 33 05 AM](https://user-images.githubusercontent.com/595772/63278652-aebb8d80-c275-11e9-8fb1-1945888d6a53.png)
 
-Go back to the root of Scrapy-tutorial (the root of the Scrapy project) and use the following command to deploy your project to Scrapyinghub.
+Go back to the root of Scrapy-macro-scrapy (the root of the Scrapy project) and use the following command to deploy your project to Scrapyinghub.
 
 ```bash
 
-(venv) dami:scrapy-tutorial harrywang$ shub login
+(venv) dami:scrapy-macro-scrapy harrywang$ shub login
 Enter your API key from https://app.scrapinghub.com/account/apikey
 API key: xxxxx
 Validating API key...
 API key is OK, you are logged in now.
-(venv) dami:scrapy-tutorial harrywang$ shub deploy 404937
+(venv) dami:scrapy-macro-scrapy harrywang$ shub deploy 404937
 Messagepack is not available, please ensure that msgpack-python library is properly installed.
 Saving project 404937 as default target. You can deploy to it via 'shub deploy' from now on
-Saved to /Users/harrywang/xxx/scrapy-tutorial/scrapinghub.yml.
+Saved to /Users/harrywang/xxx/scrapy-macro-scrapy/scrapinghub.yml.
 Packing version b6ac860-master
-Created setup.py at /Users/harrywang/xxx/scrapy-tutorial
+Created setup.py at /Users/harrywang/xxx/scrapy-macro-scrapy
 Deploying to Scrapy Cloud project "404937"
 {"status": "ok", "project": 4xxx, "version": "b6ac860-master", "spiders": 3}
 Run your spiders at: https://app.scrapinghub.com/p/404937/
@@ -48,7 +48,7 @@ run `$ shub deploy` to deploy again.
 We have three spiders in the project:
 - quotes_spider.py is the main spider
 - quotes_spider_v1.py is the version 1 of the spider that writes to files, etc.
-- authors_spider.py is the spider to get author page from the official tutorial
+- authors_spider.py is the spider to get author page from the official macro-scrapy
 
 You can see your current deployment on scrapinghub.com:
 ![Screen Shot 2019-08-19 at 11 44 31 AM](https://user-images.githubusercontent.com/595772/63279289-bd567480-c276-11e9-8b0d-f24607517652.png)
@@ -147,7 +147,7 @@ Timezone
 heroku config:set TZ=US/Eastern
 # heroku config:get TZ
 ```
-Redis (optional - not in this tutorial)
+Redis (optional - not in this macro-scrapy)
 Redis account (optional, see settings.py in the scrapy_redis_demo_project.zip)
 ```
 heroku config:set REDIS_HOST=your-redis-host
@@ -222,18 +222,18 @@ change the deploy setting in scrapy.cfg:
 url = http://scrapyd-server1.herokuapp.com
 username = admin
 password = scrapydweb
-project = scrapy-tutorial
+project = scrapy-macro-scrapy
 ```
 Then, use `scrapyd-deploy` to package and deploy to scrapyd server:
 
 ```
-(venv) dami:scrapy-tutorial harrywang$ scrapyd-deploy
-/Users/harrywang/sandbox/scrapy-tutorial/venv/lib/python3.6/site-packages/scrapyd_client/deploy.py:23: ScrapyDeprecationWarning: Module `scrapy.utils.http` is deprecated, Please import from `w3lib.http` instead.
+(venv) dami:scrapy-macro-scrapy harrywang$ scrapyd-deploy
+/Users/harrywang/sandbox/scrapy-macro-scrapy/venv/lib/python3.6/site-packages/scrapyd_client/deploy.py:23: ScrapyDeprecationWarning: Module `scrapy.utils.http` is deprecated, Please import from `w3lib.http` instead.
   from scrapy.utils.http import basic_auth_header
 Packing version 1566253506
-Deploying to project "scrapy-tutorial" in http://scrapyd-server1.herokuapp.com/addversion.json
+Deploying to project "scrapy-macro-scrapy" in http://scrapyd-server1.herokuapp.com/addversion.json
 Server response (200):
-{"node_name": "9177f699-b645-4656-82d1-beef2898fdc1", "status": "ok", "project": "scrapy-tutorial", "version": "1566253506", "spiders": 3}
+{"node_name": "9177f699-b645-4656-82d1-beef2898fdc1", "status": "ok", "project": "scrapy-macro-scrapy", "version": "1566253506", "spiders": 3}
 ```
 go to https://srapyd-web.herokuapp.com, you should see your project deployed:
 ![Screen Shot 2019-08-19 at 6 27 32 PM](https://user-images.githubusercontent.com/595772/63303881-2063fd80-c2af-11e9-8ba7-216778176e31.png)
@@ -276,18 +276,18 @@ change the deploy setting in scrapy.cfg:
 url = http://scrapyd-server1.herokuapp.com
 username = admin
 password = scrapydweb
-project = scrapy-tutorial
+project = scrapy-macro-scrapy
 ```
 Then, use `scrapyd-deploy` to package and deploy to scrapyd server:
 
 ```
-(venv) dami:scrapy-tutorial harrywang$ scrapyd-deploy
-/Users/harrywang/sandbox/scrapy-tutorial/venv/lib/python3.6/site-packages/scrapyd_client/deploy.py:23: ScrapyDeprecationWarning: Module `scrapy.utils.http` is deprecated, Please import from `w3lib.http` instead.
+(venv) dami:scrapy-macro-scrapy harrywang$ scrapyd-deploy
+/Users/harrywang/sandbox/scrapy-macro-scrapy/venv/lib/python3.6/site-packages/scrapyd_client/deploy.py:23: ScrapyDeprecationWarning: Module `scrapy.utils.http` is deprecated, Please import from `w3lib.http` instead.
   from scrapy.utils.http import basic_auth_header
 Packing version 1566253506
-Deploying to project "scrapy-tutorial" in http://scrapyd-server1.herokuapp.com/addversion.json
+Deploying to project "scrapy-macro-scrapy" in http://scrapyd-server1.herokuapp.com/addversion.json
 Server response (200):
-{"node_name": "9177f699-b645-4656-82d1-beef2898fdc1", "status": "ok", "project": "scrapy-tutorial", "version": "1566253506", "spiders": 3}
+{"node_name": "9177f699-b645-4656-82d1-beef2898fdc1", "status": "ok", "project": "scrapy-macro-scrapy", "version": "1566253506", "spiders": 3}
 ```
 go to https://srapyd-web.herokuapp.com, you should see your project deployed:
 ![Screen Shot 2019-08-19 at 6 27 32 PM](https://user-images.githubusercontent.com/595772/63303881-2063fd80-c2af-11e9-8ba7-216778176e31.png)
