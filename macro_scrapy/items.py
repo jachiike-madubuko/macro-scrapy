@@ -34,6 +34,7 @@ class EventItem(Item):
     title = Field()
     location = Field()
     price = Field()
+    item_type = Field()
 
 class QuoteItem(Item):
     quote_content = Field(
