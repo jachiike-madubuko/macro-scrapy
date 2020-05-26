@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "macro-cloud",
+  "private_key_id": "dde6dc0e23f118c1fdd84f2610db0de65a41dbbb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC3WQqTL8geLt8i\nN+l6nldf/PAw4lM6rX56NU0FLwSX73P6GwdvpPif8z+RWpvgVmT9r//B3bC6IxI1\ncdgtKUm8MWcihlvw2CgkSoglV14ESCiJdiNz1QzQsn+snpfh3cGxpBcEqj7p+0Gk\ns+Dz4FoLsjSpNiZU/YVjSD9NroQKm7nbDbwof+w5Ylp5vKMdfqJ+LWxy5BCp4JP7\nMxWF/rjtiQeDAgGV9jMk8LZX6X3+7oDw2fNci7DKx+hy5vhqrjaVK/luo3skAYWO\nJvAtLsA9d39OlzwXh+GLwjjoiCOqqYnZfHeHNOE7RsEdTSjsIx2xZa8B8mCzYaao\nBphyW9vRAgMBAAECggEATcBky6YnpyUZWtl7GZSsWPhao2BXCzsnt4uC7f/SYtwY\nwqdTr/S1up7dBjb2g1wf17UbMItitozI3AE7O2uW6UfKBMoVkz0XSMySj8NNC2PO\nTPzca/KdTKNloT5gCliQG1UKrd/EblUusTnW25T4mp0n19ouxzv7pO6uabLoK9bF\nZWEN8gkKK7hM/PiyZCMr0fRY7qOyDrUOJ6g1GQguwbQ7BB5ApjlMcNP+lcTRWXu/\n30NIea6+ruqltxrq7nv01zmjzgRhOfBWWSRv/TpGQ2RDEEMxc6qOr5K3g8F2nXdN\n7u/g8ak1eMFC+ZKmu/KGqBnPfrzQsmlpWmp7x0HcQQKBgQDwsbpTr7DqleEaTqLp\ndY9GHoYtiGz6AFuYsWYKdMP4e726EWdU4vaN9bBfvbL6t6dPa+q22RAYogOO13Md\ncSOGK4R3FB+SOm8wncVKudK1V7jZ9QOERQRbn4hr0m6o5kTPuDK4s4z6jExngGsb\nWX7M51NXVmI5ksMWP7JM3LZWjwKBgQDDAcS2jh1M6AOaK1fHPoG1yVLYBEmwW6MT\nfS2bfSMZXwyfT3lSm8SrIkcfih37aMKctfuxRFZgnkpsdK+GliTRi0VmR960BKzb\njrdWcHb7JjNP09hhsFu1bvB82ghvbcC8Isgy8s6Ys3wVkhKJ09icl6nHmcOYBy1E\neKc2o/bXnwKBgQDGZmmlM8wMAhF0At/Muqen799ARxU1Gfhmq8vl0Iv9Fdq1NkVL\ntm3vZFbHBHI0sg/KqrTllZTsCRgPtU5hNXJH1TUyhrbjbSFcHKCU0Ql7i1yG5KzK\naa2G7MChx+qJdI3B/x5oGzCZEe6k3jjraWDY+9E5y63ZsTz36PdK3h+6xwKBgQCS\nYYJzcsxlzYfes4hppO8jMWPBib5y5ubMG1wf6thtFB9aewLcUtdXixyOfVQyQ5pK\nnoS3tU+NqWS+cvzLb2tl7ECFHY/728KR8ViIR1XZAvzjgGdeNU8yK3vUjKpmUqGp\n2AYl0IPqtlh/rK3DzkU8jtBAZ5keRszhKByE9KG3iwKBgQDwfvh4A/s+Wkp5Ywcc\n5BleqCCsM+AnTH6w/J6WMX3IW6EbhdmIobw7PtnsFI7HBZmNaA7s8tu57VI8JwdH\nipimOLGim+mnREQBzhrRLj9uyB2MiCosvlYtKsP9HrJqzRu7Uf9FUU3merQYMFZb\nNSn6Rz7XrUWTL3KWARF2H+8b5A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "king-2@macro-cloud.iam.gserviceaccount.com",
+  "client_id": "105999427395246347040",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/king-2%40macro-cloud.iam.gserviceaccount.com"
+}
