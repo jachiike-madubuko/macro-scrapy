@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "C:\\Users\\jachi\\.virtualenvs\\macroTix-6fnMJBiD\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\jachi\\.virtualenvs\\macroTix-6fnMJBiD\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": true
 }

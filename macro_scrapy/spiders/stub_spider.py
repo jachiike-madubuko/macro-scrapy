@@ -3,8 +3,14 @@ from scrapy import Request
 from macro_scrapy.items import EventItem
 import scrapy
 
-class MacroSpider(Spider):
-    name = 'MacroSpider'
+
+# maybe the issue is just  js heavy website like seatgeek
+# try an easier website
+# also try pyquery on another parser lib
+#ideally headless
+
+class StubSpider(Spider):
+    name = 'StubSpider'
     start_urls = ['https://seatgeek.com/baltimore-ravens-tickets']  # LEVEL 1
 
 
@@ -15,7 +21,7 @@ class MacroSpider(Spider):
             # 'https://seatgeek.com/pittsburgh-steelers-tickets',
             # 'https://seatgeek.com/dallas-cowboys-tickets',
             'https://www.foxsports.com/soccer/news',
-            
+
             ]
 
         for url in urls:

@@ -25,7 +25,7 @@ class NewsPipeline(object):
         Initializes database connection and sessionmaker
         Creates tables
         """
-        self.db = firestore.Client()
+        # self.db = firestore.Client()
 
         logging.info("****SaveQuotePipeline: database connected****")
 
@@ -36,7 +36,7 @@ class NewsPipeline(object):
         """
         logging.info("****SaveItem: firestore****")
 
-        self.db.collection(item['item_type']).add(item)
+        # self.db.collection(item['item_type']).add(item)
 
 
         # try:

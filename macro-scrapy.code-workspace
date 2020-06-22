@@ -1,8 +1,23 @@
 {
 	"folders": [
 		{
+			"name": "macro-streamlit",
+			"path": "..\\macro-streamlit"
+		},
+		{
+			"name": "awesome-streamlit",
+			"path": "..\\awesome-streamlit"
+		},
+		{
+			"name": "macro-selenium",
+			"path": "..\\macro-selenium"
+		},
+		{
+			"name": "macro-scrapy",
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.pythonPath": "C:\\Users\\jachi\\.virtualenvs\\macroTix-6fnMJBiD\\Scripts\\python.exe"
+	}
 }
