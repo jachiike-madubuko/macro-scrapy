@@ -37,7 +37,17 @@ ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
+from shutil import which
 
+SELENIUM_DRIVER_NAME = 'firefox'
+SELENIUM_DRIVER_EXECUTABLE_PATH = which('geckodriver')
+SELENIUM_DRIVER_ARGUMENTS=['-headless']  # '--headless' if using chrome instead of firefox
+
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_selenium.SeleniumMiddleware': 800
+}
+# REMOTE CNOFIg https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver#:~:text=Selenium%20Remote%20Driver%20%20%20%20%20,%20Sep%2C%202019%20%20104%20more%20rows%20
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
@@ -66,9 +76,9 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'macro_scrapy.middlewares.macro_scrapyDownloaderMiddleware': 543,
-#}
+DOWNLOADER_MIDDLEWARES = {
+    'scrapy_selenium.SeleniumMiddleware': 800
+}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
